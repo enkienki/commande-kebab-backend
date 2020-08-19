@@ -6,15 +6,15 @@ const mongoose = require("mongoose");
 const http = require("http");
 const socketIO = require("socket.io");
 
-const whitelist = ["https://commande-kebab.herokuapp.com/"];
-const corsOptions = {
-  credentials: true,
-  origin: (origin, callback) => {
-    if (whitelist.includes(origin)) return callback(null, true);
+// const whitelist = ["https://commande-kebab.herokuapp.com/"];
+// const corsOptions = {
+//   credentials: true,
+//   origin: (origin, callback) => {
+//     if (whitelist.includes(origin)) return callback(null, true);
 
-    callback(new Error("Not allowed by CORS"));
-  },
-};
+//     callback(new Error("Not allowed by CORS"));
+//   },
+// };
 
 //controllers
 const fetchProducts = require("./controllers/fetch-products");
