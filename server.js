@@ -33,7 +33,7 @@ const seedCarteToDb = require("./functions/seedCarteToDb");
 
 const PORT = process.env.PORT || 5000;
 const app = express();
-app.use(cors(corsOptions));
+app.use(cors());
 const router = express.Router();
 const server = http.createServer(app);
 
