@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const http = require("http");
 const socketIO = require("socket.io");
 
-const whitelist = ["http://localhost:3000"];
+const whitelist = ["https://commande-kebab.herokuapp.com/"];
 const corsOptions = {
   credentials: true,
   origin: (origin, callback) => {
