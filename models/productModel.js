@@ -14,6 +14,12 @@ const ProductSchema = new Schema({
     type: Number,
     required: true,
   },
+  initial: {
+    type: String,
+  },
+  bestseller: {
+    type: Boolean,
+  },
 });
 
 const product = mongoose.model("product", ProductSchema);

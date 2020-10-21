@@ -76,7 +76,7 @@ io.on("connection", (socket) => {
   socket.on("carte", () => {
     product
       .find({})
-      //.sort({ $natural: -1 })
+      .sort({ $natural: -1 })
       .then((docs) => {
         io.sockets.emit("get_carte", docs);
       });
